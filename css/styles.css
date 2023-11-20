@@ -19,6 +19,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   body {
     line-height: 1;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+  padding: 0;
   }
   
   /* Отсутствие знаков упорядоченных и неупорядоченных списков */
@@ -40,7 +42,40 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
 
   /* --------- header ------- */
-.header-navigation{
+.header{
     display: flex;
-    
+}
+
+.header-navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.header-logo {
+  margin: 0;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation__links {
+  display: flex;
+  margin-right: 53px; /* маржин справа 53px */
+}
+
+.header-navigation__links li {
+  margin: 0 15px;
+}
+
+.header-navigation__authorization {
+  list-style: none;
+  display: flex;
+}
+
+.header-navigation__authorization li {
+  margin: 0 10px;
 }
